@@ -37,7 +37,7 @@ while True:
         if get_curr_epoch() > ep:
             continue
         while get_curr_epoch() < ep:
-            left = str(int(epoch - get_curr_epoch())).zfill(4)
+            left = str(int(ep - get_curr_epoch())).zfill(4)
             print(f"[HOUR {nth+1}] {left} secs left", end="\r")
             time.sleep(0.1)
         play_sound(stuff_folder / 'gamble.wav')
